@@ -1,0 +1,283 @@
+body {
+	background-color: black;
+	position: fixed;
+	background-image: url(../Sources/background-image.png);
+	background-size: cover;
+	overflow: hidden;
+	-webkit-selection: none;
+	user-select: none;
+	right: 0;
+	left: 0;
+}
+
+/*Header Part*/
+
+.Title {
+	color: white;
+}
+
+.header {
+	position: fixed;
+	display: flex;
+	right: 0;
+	top: 0;
+	left: 0;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius:  50px;
+	background-color: hsl(0, 0%, 25%, 0.5);
+	height: 85px;
+	overflow: hidden;
+	border-left: 2px solid hsl(30, 60%, 20%, 0.2);
+	border-right: 2px solid hsl(30, 60%, 20%, 0.2);
+	border-bottom: 2px solid hsl(30, 60%, 20%, 0.5);
+	border-top: 0px;
+	backdrop-filter: blur(20px);
+	margin-inline: -1px;
+
+}
+
+.left-element {
+	width: 60%;
+	margin-top: -10px;
+	margin-left: 10px;
+}
+
+.Navigation {
+	height: 40px;
+	cursor: pointer;
+	background-color: transparent;
+	color: whitesmoke;
+	font-weight: bolder;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom: 3px solid brown;
+	transition: 0.3s;
+	margin-inline: 10px;
+}
+
+.Navigation:hover {
+	height: 40px;
+	cursor: pointer;
+	border-bottom: 6px solid brown;
+	text-shadow: 0 0 20px whitesmoke;
+	transition: 0.3s;
+}
+
+.right-element {
+	width: 77%;
+	margin-top: 15px;
+}
+
+
+#Feedback {
+	margin-right: 60px;
+}
+
+.login {
+	border-radius: 10px;
+	height: 45px;
+	width: 80px;
+	border: solid brown;
+	background-color: transparent;
+	text-align: center;
+	margin-right: 10px;
+	color: brown;
+	box-shadow: 0 0 10px brown;
+	font-weight: bolder;
+	cursor: pointer;
+
+}
+
+.signup {
+	border-radius: 10px;
+	height: 50px;
+	width: 100px;
+	border: solid brown;
+	background-color: brown;
+	text-align: center;
+	border-width: 2px;
+	margin-right: 20px;
+	color: whitesmoke;
+	box-shadow: 0 0 10px brown;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.logo {
+	margin-bottom: -25px;
+	margin-left: 20px;
+	border-radius: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	width: 350px;
+	margin-top: -20px;
+	margin-bottom: -12px;
+	border-block: -20px;
+	border: 2px solid whitesmoke;
+	text-decoration: none;
+}
+
+.midcontents {
+	position: fixed;
+	width: 59%;
+	height: 71.5%;
+	background-color: hsl(0, 0%, 25%, 0.5);
+	backdrop-filter: blur(20px);
+	border-radius: 20px;
+	padding-inline: 20px;
+	border: 1px solid grey;
+	padding-block: 20px;
+}
+
+.mid-contents {
+	overflow-y: auto;
+	height: 100%;
+	overflow-x: auto;
+	padding-inline: 5%;
+}
+
+.mid-contents::-webkit-scrollbar {
+	width: 10px;
+	margin-left: 10px;
+}
+
+.mid-contents::-webkit-scrollbar-track {
+	background: hsl(0, 0%, 20% / 1.0);
+}
+.mid-contents::-webkit-scrollbar-thumb {
+	background: gray;
+	border-radius: 10px;
+}
+
+.Title-Content-Separation {
+	width: 500px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	color: ghostwhite;
+}
+
+.rightcontents {
+	position: fixed;
+	width: 24%;
+	margin-left: 63%;
+	background-color: hsl(0, 0%, 25%, 0.5);
+	backdrop-filter: blur(20px);
+	border-radius: 20px;
+	margin-left: ;
+	height: 64.3%;
+	padding-block: 20px;
+	border: 1px solid grey;
+	margin-top: 50px;
+}
+
+.right-contents {
+	overflow-y: auto;
+	height: 100%;
+	width: 100%;
+	scrollbar-color: transparent;
+	scrollbar-track-color: red;
+}
+
+.right-contents::-webkit-scrollbar {
+	width: 10px;
+	margin-left: 10px;
+}
+
+.right-contents::-webkit-scrollbar-track {
+	background: hsl(0, 0%, 20% / 1.0);
+}
+.right-contents::-webkit-scrollbar-thumb {
+	background: gray;
+	border-radius: 10px;
+}
+
+.wholecontainer {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	margin-top: 120px;
+	margin-inline: 5%;
+}
+
+.episodes {
+	text-decoration: none;
+}
+
+.episodes-container {
+	border-radius: 15px;
+	margin-bottom: -10px;
+	transition: 0.3s;
+	padding-top: 11px;
+	color: whitesmoke;
+	width: 85%;
+}
+
+.episodes-container:hover {
+	border-radius: 15px;
+	margin-bottom: -10px;
+	background-color: ghostwhite;
+	border-color: transparent;
+	transition: 0.3s;
+	color: black;
+}
+
+#IndividualEpisode:hover {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h1, p, h6, h5, h4, h3, h2, img, a, br, li, pre {
+	color: antiquewhite;
+	font-family: sans-serif; 
+}
+
+.search-container {
+	background-color: hsl(0, 0%, 25%, 0.5);
+	backdrop-filter: blur(20px);;
+	border-radius: 20px;
+	width: 24.1%;
+	margin-left: 63%;
+	height: 25px;
+	display: flex;
+	position: fixed;
+	overflow: hidden;
+	border: 1px solid grey;
+}
+
+.SearchText {
+	width: 100%;
+	height: 41px;
+	margin-top: -5px;
+	background-color: transparent;
+	border-width: ;
+	border-radius: 20px;
+	margin-left: -5px;
+	padding-inline: 10px;
+	border-width: 0px;
+	box-shadow: none;
+	outline: none;
+	color: whitesmoke;
+}
+
+.SearchButton {
+	background-color: transparent;
+	outline: none;
+	box-shadow: transparent;
+	height: 40px;
+	width: 40px;
+	margin-top: -5px;
+	border: none;
+	cursor: pointer;
+}
+
+.Title-Content-Separation {
+	margin-top: -5px;
+	margin-bottom: 1px;
+}

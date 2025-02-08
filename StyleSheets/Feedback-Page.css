@@ -1,0 +1,312 @@
+body {
+	background-color: black;
+	position: fixed;
+	background-image: url(../Sources/background-image.png);
+	background-size: cover;
+	overflow: hidden;
+	user-select: none;
+	right: 0;
+	left: 0;
+}
+
+.Sub:hover {
+	box-shadow: 0 0 30px brown;
+}
+
+.header {
+	position: fixed;
+	display: flex;
+	right: 0;
+	top: 0;
+	left: 0;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius:  50px;
+	background-color: hsl(0, 0%, 25%, 0.5);
+	height: 85px;
+	overflow: hidden;
+	border-left: 2px solid hsl(30, 60%, 20%, 0.2);
+	border-right: 2px solid hsl(30, 60%, 20%, 0.2);
+	border-bottom: 2px solid hsl(30, 60%, 20%, 0.5);
+	border-top: 0px;
+	backdrop-filter: blur(20px);
+	margin-inline: -1px;
+}
+
+.left-element {
+	width: 60%;
+	margin-top: -10px;
+	margin-left: 10px;
+}
+
+.Navigation {
+	height: 40px;
+	cursor: pointer;
+	background-color: transparent;
+	color: whitesmoke;
+	font-weight: bolder;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom: 3px solid brown;
+	transition: 0.3s;
+	margin-inline: 10px;
+}
+
+.Navigation:hover {
+	height: 40px;
+	cursor: pointer;
+	border-bottom: 6px solid brown;
+	text-shadow: 0 0 20px whitesmoke;
+	transition: 0.3s;
+}
+
+.right-element {
+	width: 77%;
+	margin-top: 15px;
+}
+
+
+#Feedback {
+	margin-right: 60px;
+}
+
+.login {
+	border-radius: 10px;
+	height: 45px;
+	width: 80px;
+	border: solid brown;
+	background-color: transparent;
+	text-align: center;
+	margin-right: 10px;
+	color: brown;
+	box-shadow: 0 0 10px brown;
+	font-weight: bolder;
+	cursor: pointer;
+
+}
+
+.signup {
+	border-radius: 10px;
+	height: 50px;
+	width: 100px;
+	border: solid brown;
+	background-color: brown;
+	text-align: center;
+	border-width: 2px;
+	margin-right: 20px;
+	color: whitesmoke;
+	box-shadow: 0 0 10px brown;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.logo {
+	margin-bottom: -25px;
+	margin-left: 20px;
+	border-radius: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	width: 350px;
+	margin-top: -20px;
+	margin-bottom: -12px;
+	border-block: -20px;
+	border: 2px solid whitesmoke;
+	text-decoration: none;
+}
+
+.midcontents {
+	position: fixed;
+	width: 56%;
+	height: 71.5%;
+	background-color: hsl(0, 0%, 25%, 0.6);
+	backdrop-filter: blur(20px);
+	border-radius: 20px;
+	padding-inline: 20px;
+	border: 1px solid grey;
+	padding-block: 20px;
+	margin-top: 90px;
+	transform: translate(-50%);
+	left: 50%;
+}
+
+.mid-contents {
+	overflow-y: auto;
+	height: 100%;
+	overflow-x: hidden;
+	padding-inline: 40px;
+}
+
+.mid-contents::-webkit-scrollbar {
+	width: 10px;
+	margin-left: 10px;
+}
+
+.mid-contents::-webkit-scrollbar-track {
+	background: hsl(0, 0%, 20% / 1.0);
+}
+.mid-contents::-webkit-scrollbar-thumb {
+	background: gray;
+	border-radius: 10px;
+}
+
+
+.wholecontainer {
+	display: block;
+	margin-top: 2%;
+}
+
+h1, p, h6, h5, h4, h3, h2, img, a, br {
+	color: white;
+	font-family: sans-serif;
+}
+
+.CommunityLogo {
+	transition: 0.3s;
+	border-radius: 100%;
+}
+
+.CommunityLogo:hover {
+	transition: 0.3s;
+	box-shadow: 0 0 20px whitesmoke;
+	border-radius: 100%;
+	background-color: whitesmoke;
+}
+
+.Select{
+	position: fixed;
+	background-color: brown;
+	box-shadow: 0 0 20px brown;
+	color: whitesmoke;
+	border-radius: 20px;
+	padding-block: 10px;
+	padding-inline: 2%;
+	border: none;
+}
+
+.Select:hover {
+	cursor: pointer;
+}
+
+.Select:focus{
+	outline: none;
+}
+
+.Option:hover {
+	transition: 0.3;
+	background-color: white;
+}
+
+.Message {
+	position: fixed;
+	color: whitesmoke;
+	padding-block:  3%;
+	padding-inline: 4%;
+	height: 35%;
+	width: 40%;
+	border-radius: 20px;
+	background-color: hsl(0, 0%, 25%, 0.5);
+	backdrop-filter: blur(20px);
+	border: 1px;
+	box-shadow: 0 0 10px black;
+	resize: none;
+	right: 50px;
+}
+
+.Message:focus {
+	outline: none;
+}
+
+.Send {
+	position: fixed;
+	background-color: brown;
+	box-shadow: 0 0 20px brown;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	padding-inline: 30px;
+	padding-block: 17px;
+	color: white;
+	cursor: pointer;
+	transition: 0.3s;
+	margin-inline: 37.5%;
+	margin-top: 280px;
+}
+
+.Send:hover {
+	box-shadow: 0 0 50px brown;
+	margin-top: 275px;
+	transition: 0.3s;
+}
+
+.Reminder {
+	position: fixed;
+	width: 30%;
+	height: 20%;
+	margin-top: 130px;
+	box-shadow: 0 0 10px black;
+	border-radius: 20px;
+	padding-inline: 20px;
+	text-align: center;
+}
+
+.PhoneNumber {
+	color: whitesmoke;
+	padding-inline: 20px;
+	position: fixed;
+	margin-top: 63px;
+	box-shadow: 0 0 10px black;
+	width: 30%;
+	background-color: transparent;
+	backdrop-filter: blur(10px);
+	border: none;
+	border-radius: 20px;
+	height: 40px;
+}
+
+
+.CountryCode {
+	color: darkgrey;
+	position: fixed;
+	background-color: transparent;
+	border: none;
+	width: 18%;
+	margin-top: 7px;
+	height: 65%;
+}
+
+.PhoneInput{
+	justify-content: center;
+	color: whitesmoke;
+	position: fixed;
+	background-color: transparent;
+	height: 60%;
+	margin-top: 7px;
+	margin-left: 23%;
+	border: none;
+	width: 65%;
+}
+
+.CountryCode:focus {
+	outline: none;
+}
+
+.PhoneInput:focus {
+	outline: none;
+}
+
+.InputNumberSeparation {
+	position: fixed;
+	width: 2px;
+	height: 70%;
+	background-color: brown;
+	border-radius: 5px;
+	border: 1px solid brown;
+	margin-top: 5px;
+	margin-left: 19.4%;
+	box-shadow: 0 0 5px brown;
+}

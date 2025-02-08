@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="..\..\StyleSheets\Stylesheet-Page.css">
+	<title>HTML Learning Course | Stylesheet</title>
+</head>
+<body>
+
+<fieldset class="header">
+<a class="Home-Page-Button" href="../../Main-Page.html">
+<img class="logo" src="..\..\Sources\logo.png" width="90">
+</a>
+
+<div align="left" class="left-element">
+<a class="Home-Page-Button" href="../../Main-Page.html" width=" 50">
+<h1 unselectable="on" class="Title">Html Learning Course</h1>
+<hr align="left">
+<p class="Title">A full learning html program with logical structure</p>
+</a>
+</div>
+
+<div align="right" class="right-element">
+	<a href="../Start-Page.html"><button class="Navigation">Learning Center</button></a>
+	<a href="../About-Us.html"><button class="Navigation">About us</button></a>
+	<a href="../Feedback-Page.html"><button class="Navigation" id="Feedback">Feedback</button></a>
+	
+<a href="../Log-In.html">
+	<button class="login">
+		Log-In
+	</button>
+</a>
+<a href="../Sign-up.html">
+	<button class="signup">
+		Sign-Up
+	</button>
+</a>
+</div>
+</fieldset>
+
+<div class="wholecontainer">
+<fieldset class="midcontents">
+<div class="mid-contents">
+	<h1 align="center">Stylesheet</h1>
+	<hr class="Title-Content-Separation">
+	<h3 align="center">"A Website with a design"</h3>
+	<br>
+	<h3>Common Structure (Selectors and Properties)</h3>
+
+<p>CSS rules are made up of two main parts:</p>
+
+<ul>
+  <li><b>Selector:</b>  Determines which HTML element(s) the style will be applied to.</li>
+  <li><b>Property:</b>  The style attribute you want to change (e.g., `color`, `font-size`).</li>
+  <li><b>Value:</b> The value you want to assign to the property (e.g., `blue`, `16px`).</li>
+</ul>
+
+<p><b>Example:</b></p>
+<pre>p { /* Selector: selects all &lt;p&gt; elements */
+  color: blue; /* Property: color, Value: blue */
+  font-size: 16px; /* Property: font-size, Value: 16px */
+}</pre>
+
+<p><b>Common Selectors:</b></p>
+<ul>
+    <li>Element Selector: <code>p</code>, <code>h1</code>, <code>div</code> (selects all elements of that type)</li>
+    <li>Class Selector: <code>.my-class</code> (selects elements with the class "my-class")</li>
+    <li>ID Selector: <code>#my-id</code> (selects the element with the ID "my-id")</li>
+</ul>
+
+<br><br>
+<h3>Targetting with Class and ID</h3>
+
+<p>Classes and IDs provide more specific ways to target HTML elements with your CSS rules.</p>
+
+<ul>
+  <li><b>Class:</b> Can be used to style multiple elements that share a common characteristic.
+    <br><b>HTML:</b> <code>&lt;p class="highlight"&gt;This is highlighted text.&lt;/p&gt;</code>
+    <br><b>CSS:</b> <code>.highlight { color: red; }</code></li>
+
+  <li><b>ID:</b> Used to style a single, unique element on the page.  (Only one element can have a specific ID).
+    <br><b>HTML:</b> <code>&lt;div id="header"&gt;This is the header.&lt;/div&gt;</code>
+    <br><b>CSS:</b> <code>#header { background-color: #f0f0f0; }</code></li>
+</ul>
+
+<br><br>
+<h3>The Colon (Property-Value Separation)</h3>
+
+<p>The colon (`:`) in CSS is used to separate the property from its value.  This is essential syntax and must be included in every CSS declaration.</p>
+
+<p><b>Example (Correct):</b></p>
+<pre>p {
+  color: blue; /* Colon separates 'color' (property) from 'blue' (value) */
+}</pre>
+
+<p><b>Example (Incorrect - will not work):</b></p>
+<pre>p {
+  color blue; /* Missing colon */
+}</pre>
+
+<br><br>
+<h3>The Double Colon (Pseudo-elements)</h3>
+
+<p>The double colon (`::`) is used for pseudo-elements, which allow you to style specific parts of an element.</p>
+
+<p><b>Common Pseudo-elements:</b></p>
+<ul>
+    <li><code>::before</code>:  Inserts content before the selected element.</li>
+    <li><code>::after</code>: Inserts content after the selected element.</li>
+    <li><code>::first-line</code>: Styles the first line of text in an element.</li>
+    <li><code>::first-letter</code>: Styles the first letter of text in an element.</li>
+</ul>
+
+<p><b>Example:</b></p>
+<pre>p::first-line {
+  font-weight: bold;
+}</pre>
+
+<br><br>
+<h3>-webkit- (Vendor Prefixes)</h3>
+
+<p>Vendor prefixes (like <code>-webkit-</code>, <code>-moz-</code>, <code>-ms-</code>) were used to add experimental or browser-specific CSS features.  While many are no longer needed, understanding them is helpful when working with older code or supporting very old browsers.</p>
+
+<p><b>Example (Older Code):</b></p>
+<pre>
+.box {
+  -webkit-transition: all 0.5s ease; /* For older Safari versions */
+  transition: all 0.5s ease; /* Standard syntax */
+}
+</pre>
+
+<p>Modern CSS often doesn't require prefixes for most common properties, but it's good to be aware of their historical context.</p>
+
+</div>
+</fieldset>
+<fieldset class="rightcontents">
+	<div class="right-contents" id="episodeList" align="center">
+	<a class="episodes" href="HTML-Structure-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">HTML Structure</fieldset></a><br>
+	<a class="episodes" href="Tags-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Tags</fieldset></a><br>
+	<a class="episodes" href="Stylesheet-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Stylesheet</fieldset></a><br>
+	<a class="episodes" href="Javascript-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Javascript</fieldset></a><br>
+	<a class="episodes" href="Linking-External-File-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Linking External file</fieldset></a><br>
+</div>
+</fieldset>
+
+<fieldset class="search-container">
+	<input type="search" class="SearchText" id="searchInput" placeholder="Search">
+	<button class="SearchButton">
+		<img src="..\..\Sources\Search.png" width="37">
+	</button>
+</fieldset>
+</div>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const episodeList = document.getElementById('episodeList');
+  const episodes = episodeList.querySelectorAll('.episodes'); // Select all episode links
+
+  searchInput.addEventListener('input', function(event) {
+    const searchTerm = event.target.value.toLowerCase();
+
+    episodes.forEach(episode => {
+      const episodeText = episode.textContent.toLowerCase(); // Get text content of the fieldset
+      const fieldset = episode.querySelector('.episodes-container');  // Get the fieldset
+
+      if (episodeText.includes(searchTerm)) {
+        fieldset.style.display = 'block'; // Show the fieldset if it matches
+      } else {
+        fieldset.style.display = 'none';  // Hide it otherwise
+      }
+    });
+  });
+</script>
+</body>
+</html>

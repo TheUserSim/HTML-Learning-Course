@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="..\..\StyleSheets\Tags-Page.css">
+	<title>HTML Learning Course | Tags</title>
+</head>
+<body>
+
+<fieldset class="header">
+<a class="Home-Page-Button" href="../../Main-Page.html">
+<img class="logo" src="..\..\Sources\logo.png" width="90">
+</a>
+
+<div align="left" class="left-element">
+<a class="Home-Page-Button" href="../../Main-Page.html" width=" 50">
+<h1 unselectable="on" class="Title">Html Learning Course</h1>
+<hr align="left">
+<p class="Title">A full learning html program with logical structure</p>
+</a>
+</div>
+
+<div align="right" class="right-element">
+	<a href="../Start-Page.html"><button class="Navigation">Learning Center</button></a>
+	<a href="../About-Us.html"><button class="Navigation">About us</button></a>
+	<a href="../Feedback-Page.html"><button class="Navigation" id="Feedback">Feedback</button></a>
+	
+<a href="../Log-In.html">
+	<button class="login">
+		Log-In
+	</button>
+</a>
+<a href="../Sign-up.html">
+	<button class="signup">
+		Sign-Up
+	</button>
+</a>
+</div>
+</fieldset>
+
+<div class="wholecontainer">
+<fieldset class="midcontents">
+<div class="mid-contents">
+	<h1 align="center">Tags</h1>
+	<hr class="Title-Content-Separation">
+	<h3 align="center">"The Building Blocks of Web Pages"</h3>
+	<br>
+	<h3>Text Formatting Tags</h3>
+
+<p>These tags are used to format text content within your web page.</p>
+
+<ul>
+  <li>
+    <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Define headings of different levels.
+    <br>Example: <code>&lt;h1&gt;This is a Main Heading&lt;/h1&gt;</code>
+  </li>
+  <li>
+    <code>&lt;p&gt;</code>: Defines a paragraph.
+    <br>Example: <code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code>
+  </li>
+  <li>
+    <code>&lt;br&gt;</code>: Inserts a single line break.
+    <br>Example: <code>&lt;p&gt;This is the first line.&lt;br&gt;This is the second line.&lt;/p&gt;</code>
+  </li>
+  <li>
+    <code>&lt;hr&gt;</code>: Represents a thematic break (horizontal rule).
+    <br>Example: <code>&lt;hr&gt;</code>
+  </li>
+  <li>
+    <code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code>: Makes text bold.
+    <br>Example: <code>&lt;b&gt;Bold text&lt;/b&gt;</code>
+  </li>
+  <li>
+    <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code>: Makes text italic.
+    <br>Example: <code>&lt;i&gt;Italic text&lt;/i&gt;</code>
+  </li>
+</ul>
+
+<br>
+<h3>List Tags</h3>
+
+<p>These tags are used to create lists of content.</p>
+
+<ul>
+    <li>
+        <code>&lt;ul&gt;</code>: Defines an unordered (bulleted) list.
+        <br>Example:
+        <pre>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</pre>
+    </li>
+    <li>
+        <code>&lt;ol&gt;</code>: Defines an ordered (numbered) list.
+        <br>Example:
+        <pre>&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;</pre>
+    </li>
+    <li>
+        <code>&lt;li&gt;</code>: Defines a list item within <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>.
+        <br>Example: See examples above.
+    </li>
+</ul>
+
+<br>
+<h3>Link and Image Tags</h3>
+
+<p>These tags are used to add links and images to your web pages.</p>
+
+<ul>
+  <li>
+    <code>&lt;a&gt;</code>: Defines a hyperlink (link to another page or resource).
+    <br>Example: <code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code>
+  </li>
+  <li>
+    <code>&lt;img&gt;</code>: Inserts an image.
+    <br>Example: <code>&lt;img src="image.jpg" alt="Description of the image"&gt;</code>
+  </li>
+</ul>
+
+<br>
+<h3>Container Tags (div and span)</h3>
+
+<p>These tags are used to group and structure content within your web pages.</p>
+
+<ul>
+  <li>
+    <code>&lt;div&gt;</code>: Defines a division or section (block-level element).
+    <br>Example: <code>&lt;div&gt; ... &lt;/div&gt;</code>
+  </li>
+  <li>
+    <code>&lt;span&gt;</code>: Defines an inline element.
+    <br>Example: <code>&lt;p&gt;This is a &lt;span&gt;special&lt;/span&gt; word.&lt;/p&gt;</code>
+  </li>
+</ul>
+
+<br>
+<h3>Video and Audio Tags</h3>
+
+<p>These tags are used to embed multimedia content (video and audio) into your web pages.</p>
+
+<ul>
+  <li>
+    <code>&lt;video&gt;</code>: Embeds video content.
+    <br>Example:
+    <pre>&lt;video width="640" height="360" controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  &lt;source src="video.webm" type="video/webm"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</pre>
+    <ul>
+        <li>
+            <code>src</code> attribute: Specifies the URL of the video file.
+        </li>
+        <li>
+            <code>type</code> attribute: Specifies the MIME type of the video (e.g., "video/mp4", "video/webm").  It's good practice to provide multiple source elements with different types for browser compatibility.
+        </li>
+        <li>
+            <code>controls</code> attribute: Adds video controls (play, pause, volume, etc.).
+        </li>
+        <li>
+            <code>width</code> and <code>height</code> attributes: Set the dimensions of the video player.
+        </li>
+    </ul>
+  </li>
+
+  <li>
+    <code>&lt;audio&gt;</code>: Embeds audio content.
+    <br>Example:
+    <pre>&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  &lt;source src="audio.ogg" type="audio/ogg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;</pre>
+    <ul>
+        <li>
+            <code>src</code> attribute: Specifies the URL of the audio file.
+        </li>
+        <li>
+            <code>type</code> attribute: Specifies the MIME type of the audio (e.g., "audio/mpeg", "audio/ogg").  Like video, providing multiple source elements with different types is recommended.
+        </li>
+        <li>
+            <code>controls</code> attribute: Adds audio controls.
+        </li>
+    </ul>
+  </li>
+</ul>
+</div>
+</fieldset>
+<fieldset class="rightcontents">
+	<div class="right-contents" id="episodeList" align="center">
+	<a class="episodes" href="HTML-Structure-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">HTML Structure</fieldset></a><br>
+	<a class="episodes" href="Tags-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Tags</fieldset></a><br>
+	<a class="episodes" href="Stylesheet-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Stylesheet</fieldset></a><br>
+	<a class="episodes" href="Javascript-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Javascript</fieldset></a><br>
+	<a class="episodes" href="Linking-External-File-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Linking External file</fieldset></a><br>
+</div>
+</fieldset>
+
+<fieldset class="search-container">
+	<input type="search" class="SearchText" id="searchInput" placeholder="Search">
+	<button class="SearchButton">
+		<img src="..\..\Sources\Search.png" width="37">
+	</button>
+</fieldset>
+</div>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const episodeList = document.getElementById('episodeList');
+  const episodes = episodeList.querySelectorAll('.episodes'); // Select all episode links
+
+  searchInput.addEventListener('input', function(event) {
+    const searchTerm = event.target.value.toLowerCase();
+
+    episodes.forEach(episode => {
+      const episodeText = episode.textContent.toLowerCase(); // Get text content of the fieldset
+      const fieldset = episode.querySelector('.episodes-container');  // Get the fieldset
+
+      if (episodeText.includes(searchTerm)) {
+        fieldset.style.display = 'block'; // Show the fieldset if it matches
+      } else {
+        fieldset.style.display = 'none';  // Hide it otherwise
+      }
+    });
+  });
+</script>
+</body>
+</html>

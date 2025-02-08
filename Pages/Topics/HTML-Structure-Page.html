@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="..\..\StyleSheets\HTML-Structure-Page.css">
+	<title>HTML Learning Course | HTML Structure</title>
+</head>
+<body>
+
+<fieldset class="header">
+<a class="Home-Page-Button" href="../../Main-Page.html">
+<img class="logo" src="..\..\Sources\logo.png" width="90">
+</a>
+
+<div align="left" class="left-element">
+<a class="Home-Page-Button" href="../../Main-Page.html" width=" 50">
+<h1 unselectable="on" class="Title">Html Learning Course</h1>
+<hr align="left">
+<p class="Title">A full learning html program with logical structure</p>
+</a>
+</div>
+
+<div align="right" class="right-element">
+	<a href="../Start-Page.html"><button class="Navigation">Learning Center</button></a>
+	<a href="../About-Us.html"><button class="Navigation">About us</button></a>
+	<a href="../Feedback-Page.html"><button class="Navigation" id="Feedback">Feedback</button></a>
+	
+<a href="../Log-In.html">
+	<button class="login">
+		Log-In
+	</button>
+</a>
+<a href="../Sign-up.html">
+	<button class="signup">
+		Sign-Up
+	</button>
+</a>
+</div>
+</fieldset>
+
+<div class="wholecontainer">
+<fieldset class="midcontents">
+<div class="mid-contents">
+	<h1 align="center">HTML Structure</h1>
+	<hr class="Title-Content-Separation">
+	<br>
+	<p>HTML documents have two main sections: the Head and the Body. Each has a distinct purpose.</p>
+	<img src="..\..\Sources\HTML-Structure.png" align="center">
+	<h3></h3>
+	<h3>Head Tag</h3>
+	<p>Contains meta-information about the HTML document (data about data). This information is not displayed directly on the page but is used by the browser and search engines.</p>
+	<br>
+	<h3>Body Tag</h3>
+	<p>Contains the visible content of the HTML document, such as text, images, and other elements that users see.</p>
+</div>
+</fieldset>
+<fieldset class="rightcontents">
+	<div class="right-contents" id="episodeList" align="center">
+	<a class="episodes" href="HTML-Structure-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">HTML Structure</fieldset></a><br>
+	<a class="episodes" href="Tags-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Tags</fieldset></a><br>
+	<a class="episodes" href="Stylesheet-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Stylesheet</fieldset></a><br>
+	<a class="episodes" href="Javascript-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Javascript</fieldset></a><br>
+	<a class="episodes" href="Linking-External-File-Page.html"><fieldset class="episodes-container" id="IndividualEpisode">Linking External file</fieldset></a><br>
+</div>
+</fieldset>
+
+<fieldset class="search-container">
+	<input type="search" class="SearchText" id="searchInput" placeholder="Search">
+	<button class="SearchButton">
+		<img src="..\..\Sources\Search.png" width="37">
+	</button>
+</fieldset>
+</div>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const episodeList = document.getElementById('episodeList');
+  const episodes = episodeList.querySelectorAll('.episodes'); // Select all episode links
+
+  searchInput.addEventListener('input', function(event) {
+    const searchTerm = event.target.value.toLowerCase();
+
+    episodes.forEach(episode => {
+      const episodeText = episode.textContent.toLowerCase(); // Get text content of the fieldset
+      const fieldset = episode.querySelector('.episodes-container');  // Get the fieldset
+
+      if (episodeText.includes(searchTerm)) {
+        fieldset.style.display = 'block'; // Show the fieldset if it matches
+      } else {
+        fieldset.style.display = 'none';  // Hide it otherwise
+      }
+    });
+  });
+</script>
+</body>
+</html>

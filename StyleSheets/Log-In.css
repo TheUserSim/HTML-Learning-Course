@@ -1,0 +1,147 @@
+body {
+	background-color: black;
+	-webkit-user-select: none;
+	position: fixed;
+	background-image: url(../Sources/LogIn-And-Sign-Up-Wallpaper.gif);
+	background-size: 100%;
+	background-color: black;
+	background-position-y: 14%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+
+}
+
+.FormContainer {
+	height: 90%;
+	width: 350px;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(40px);
+	border: 1px solid dimgray;
+	overflow: hidden;
+	padding-inline: -50px;
+	float: right;
+	right: 0;
+	margin-right: 15px;
+	margin-block: 6%;
+
+}
+
+.Form {
+	width: 100%;
+	margin-right: -2px;
+	overflow: hidden;
+	right: 0;
+}
+
+.RegisterButton {
+	padding: 5%;
+	border-radius: 30px;
+	border-width: 1px;
+	transition: 0.4s;
+	border-color: transparent;
+	width: 250px;
+	width: 250px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.RegisterButton:hover {
+	padding: 5%;
+	border-radius: 30px;
+	border-width: 1px;
+	background-color: brown;
+	transition: 0.4s;
+	border-color: transparent;
+	box-shadow: 0 0 20px brown;
+	cursor: pointer;
+	color: whitesmoke;
+}
+
+input {
+	width: 220px;
+	border-radius: 5px;
+	border-width: 0;
+	height: 30px;
+	transition: 0.4s;
+	margin-left: 25px;
+}
+
+input:focus {
+	width: 210px;
+	border-radius: 5px;
+	border-width: 0;
+	height: 30px;
+	box-shadow: 0 0 20px brown;
+	transition: 0.4s;
+	outline: none;
+}
+
+h1 {
+	font-family: sans-serif;
+	color: whitesmoke;
+}
+
+video {
+	top: 0;
+	left: 0;
+}
+
+
+p {
+	font-family: monospace;
+	margin-bottom: -20px;
+	font-size: 20px;
+}
+
+
+.LogIn {
+	width: 30%;
+	height: 5%;
+	margin-right: -15px;
+	border-radius: 50px;
+	border: solid brown;
+	background-color: brown;
+	box-shadow: 0 0 15px brown;
+	color: whitesmoke;
+}
+
+.Register {
+	width: 30%;
+	height: 5%;
+	margin-left: -15px;
+	border-radius: 50px;
+	border: solid brown;
+	background-color: transparent;
+	color: whitesmoke;
+	position: relative;
+	z-index: 1px;
+	cursor: pointer;
+}
+
+.LogIn, .Register {
+	margin-top: 20px;
+}
+
+.MainPage {
+	color: hsl(0, 0%, 50%, 1.0);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.MainPage:hover {
+	color: hsl(0, 0%, 80%, 1.0);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+
+.Icons {
+	margin-right: -20px;
+}
+
+
